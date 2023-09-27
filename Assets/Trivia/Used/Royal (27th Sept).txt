@@ -1,0 +1,257 @@
+{
+  "preserveQuestionOrder": false,
+  "preserveRoundOrder": true,
+  "author": "royal_flush",
+  "questions": [
+    {
+      "category": "Space",
+      "question": "'I'm unhappy about the space between Smith and and and and and Jones' is an example of what literary trope?",
+      "correct": "Antanaclasis",
+      "incorrectAnswers": [
+        "Epizeuxis",
+        "Conduplicatio",
+        "Mesodiplosis"
+      ]
+    },
+    {
+      "category": "Space",
+      "question": "'A Spaceman Came Travelling' is (apparently) a Christmas song by which artist?",
+      "correct": "Chris de Burgh",
+      "incorrectAnswers": [
+        "Lionel Richie",
+        "Phil Collins",
+        "Eric Clapton"
+      ]
+    },
+    {
+      "category": "Space",
+      "question": "'Space, is big. Really big.' is a line from a novel by which author?",
+      "correct": "Douglas Adams",
+      "incorrectAnswers": [
+        "Terry Pratchett",
+        "Arthur C. Clarke",
+        "Frank Herbert"
+      ]
+    },
+    {
+      "category": "Space",
+      "question": "At the end of Portal 2 [spoiler alert], the Space Core gets stranded in space with Wheatley, a character voiced by which comedian?",
+      "correct": "Stephen Merchant",
+      "incorrectAnswers": [
+        "Robert Webb",
+        "David Walliams",
+        "Ed Byrne"
+      ]
+    },
+    {
+      "category": "Space",
+      "question": "Which of these is a TV sitcom created, written by and starring Simon Pegg and Jessica Stevenson?",
+      "correct": "Spaced",
+      "incorrectAnswers": [
+        "Space Jam",
+        "Space Hopper",
+        "Spaceman"
+      ]
+    },
+    {
+      "category": "Time",
+      "question": "The episode 'Once, Upon Time' featured in which 2021 Doctor Who serial?",
+      "correct": "Flux",
+      "incorrectAnswers": [
+        "Hydrax",
+        "ATMOS",
+        "Collision"
+      ]
+    },
+    {
+      "category": "Time",
+      "question": "'Exact time for life' is the slogan for which high-end watch brand?",
+      "correct": "Omega",
+      "incorrectAnswers": [
+        "Rolex",
+        "TAG Heuer",
+        "Patek Philippe"
+      ]
+    },
+    {
+      "category": "Time",
+      "question": "Which of these commercial flights would see you arrive before you leave?",
+      "correct": "Hong Kong to San Francisco",
+      "incorrectAnswers": [
+        "Canberra to Wellington",
+        "Tokyo to Beijing",
+        "Changi to Istanbul"
+      ]
+    },
+    {
+      "category": "Time",
+      "question": "'It was the best of times, it was the worst of times' is the opening line of which novel?",
+      "correct": "A Tale of Two Cities",
+      "incorrectAnswers": [
+        "Great Expectations",
+        "Martin Chuzzlewit",
+        "Bleak House"
+      ]
+    },
+    {
+      "category": "Time",
+      "question": "Who released the 1983 song 'Time After Time'?",
+      "correct": "Cyndi Lauper",
+      "incorrectAnswers": [
+        "Cher",
+        "Bonnie Tyler",
+        "The Bangles"
+      ]
+    },
+    {
+      "category": "Power",
+      "question": "Which party is currently in power in Australia?",
+      "correct": "Labour",
+      "incorrectAnswers": [
+        "Liberal",
+        "Green",
+        "Nationals"
+      ]
+    },
+    {
+      "category": "Power",
+      "question": "Who starred as Oz in the 2013 Sam Raimi film 'Oz the Great and Powerful'?",
+      "correct": "James Franco",
+      "incorrectAnswers": [
+        "Zach Braff",
+        "Tobey Maguire",
+        "Johnny Depp"
+      ]
+    },
+    {
+      "category": "Power",
+      "question": "In the late 1980s, Joseph Nye became the first person to make reference to what?",
+      "correct": "Soft power",
+      "incorrectAnswers": [
+        "Power vacuum",
+        "Knowledge is power",
+        "Power dressing"
+      ]
+    },
+    {
+      "category": "Power",
+      "question": "What is five raised to the fifth power?",
+      "correct": "3,125",
+      "incorrectAnswers": [
+        "25",
+        "120",
+        "15,625"
+      ]
+    },
+    {
+      "category": "Power",
+      "question": "'With great power comes great responsibility' is an expression associated with which superhero?",
+      "correct": "Spider-Man",
+      "incorrectAnswers": [
+        "Superman",
+        "Batman",
+        "Iron Man"
+      ]
+    },
+    {
+      "category": "Energy",
+      "question": "In Einstein's famous formula E = mc^2, what does the 'c' represent?",
+      "correct": "The speed of light",
+      "incorrectAnswers": [
+        "Energy",
+        "Mass",
+        "Power"
+      ]
+    },
+    {
+      "category": "Energy",
+      "question": "Which of these is an energy drink?",
+      "correct": "Monster Energy",
+      "incorrectAnswers": [
+        "Vampire Energy",
+        "Werewolf Energy",
+        "Ghost Energy"
+      ]
+    },
+    {
+      "category": "Energy",
+      "question": "Which electronic duo released the 2020 hit single 'Energy'?",
+      "correct": "Disclosure",
+      "incorrectAnswers": [
+        "The Chemical Brothers",
+        "Basement Jaxx",
+        "Daft Punk"
+      ]
+    },
+    {
+      "category": "Energy",
+      "question": "Though the term 'energise' is formally used for transporter commands, which of these lines has NEVER been said in Star Trek?",
+      "correct": "Beam me up, Scotty",
+      "incorrectAnswers": [
+        "Scotty, beam us up, fast",
+        "Prepare to beam us up, Mr Scott",
+        "Have Scotty beam us up"
+      ]
+    },
+    {
+      "category": "Energy",
+      "question": "How much energy would it take to raise the temperature of one kilogram of water by one degree celsius?",
+      "correct": "42 Joules",
+      "incorrectAnswers": [
+        "420 Joules",
+        "4,200 Joules",
+        "42,000 Joules"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "question": "Which of these is NOT the name of one of Marvel's six Infinity Stones?",
+      "correct": "Energy",
+      "incorrectAnswers": [
+        "Power",
+        "Time",
+        "Space"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "question": "Which of these would score nine points when played without bonus tiles in a standard game of UK Scrabble?",
+      "correct": "Space",
+      "incorrectAnswers": [
+        "Energy",
+        "Power",
+        "Time"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "question": "In 1973, Jim Croce sang about what '...in a Bottle'?",
+      "correct": "Time",
+      "incorrectAnswers": [
+        "Energy",
+        "Power",
+        "Space"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "question": "Which word features in a Fox Kids TV show that debuted on August 28th 1993?",
+      "correct": "Power",
+      "incorrectAnswers": [
+        "Energy",
+        "Time",
+        "Space"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "question": "What was the category of round two of DangerZone today?",
+      "correct": "Time",
+      "incorrectAnswers": [
+        "Energy",
+        "Power",
+        "Space"
+      ]
+    }
+  ]
+}

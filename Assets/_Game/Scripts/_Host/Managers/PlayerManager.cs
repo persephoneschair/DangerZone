@@ -20,36 +20,47 @@ public class PlayerManager : SingletonMonoBehaviour<PlayerManager>
         get { return _focusPlayer; }
         set
         {
-            if(value != null)
+            if (value != null)
             {
                 _focusPlayer = value;
                 playerName = value.playerName;
                 twitchName = value.twitchName;
                 profileImage = value.profileImage;
-                flagForCondone = value.flagForCondone;
                 wasCorrect = value.wasCorrect;
-                eliminated = value.eliminated;
+                isInDangerZone = value.isInDangerZone;
+                dzAppearances = value.dzAppearances;
+                
+                eliminated = value.isEliminated;
+                nerfed = value.nerfed;
+                multiplier = value.multiplier;
 
                 points = value.points;
+                pointsLastQ = value.pointsLastQ;
                 totalCorrect = value.totalCorrect;
                 submission = value.submission;
                 submissionTime = value.submissionTime;
+                helpUsed = value.helpUsed;
             }
             else
             {
                 playerName = "OUT OF RANGE";
                 twitchName = "OUT OF RANGE";
                 profileImage = null;
-                flagForCondone = false;
                 wasCorrect = false;
+
+                isInDangerZone = false;
+                dzAppearances = 0;
+
                 eliminated = false;
+                nerfed = false;
+                multiplier = false;
 
                 points = 0;
+                pointsLastQ = 0;
                 totalCorrect = 0;
-                currentBid = 0;
-                maxPoints = 0;
                 submission = "OUT OF RANGE";
                 submissionTime = 0;
+                helpUsed = false;
             }                
         }
     }
@@ -58,17 +69,21 @@ public class PlayerManager : SingletonMonoBehaviour<PlayerManager>
     [ShowOnly] public string playerName;
     [ShowOnly] public string twitchName;
     public Texture profileImage;
-    [ShowOnly] public bool flagForCondone;
     [ShowOnly] public bool wasCorrect;
     [ShowOnly] public bool eliminated;
+    [ShowOnly] public bool isInDangerZone;
+    [ShowOnly] public int dzAppearances;
+    [ShowOnly] public bool nerfed;
+    [ShowOnly] public bool multiplier;
+
 
     [Header("Variable Fields")]
     public int points;
+    public int pointsLastQ;
     public int totalCorrect;
-    public int currentBid;
-    public int maxPoints;
     public string submission;
     public float submissionTime;
+    public bool helpUsed;
 
     void UpdateDetails()
     {

@@ -1,0 +1,47 @@
+[
+  {
+    "questionText": "How many Dalmatians were used in the filming of the 1996 live-action version of 101 Dalmatians?",
+    "answers": [
+      {
+        "answerText": "250",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "questionText": "How many elements have been discovered?",
+    "answers": [
+      {
+        "answerText": "118",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "questionText": "How many minutes is a regulation football match?",
+    "answers": [
+      {
+        "answerText": "90",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "questionText": "How many monitors do I have in my office?",
+    "answers": [
+      {
+        "answerText": "5",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "questionText": "What is 9 times 9?",
+    "answers": [
+      {
+        "answerText": "81",
+        "isCorrect": true
+      }
+    ]
+  }
+]

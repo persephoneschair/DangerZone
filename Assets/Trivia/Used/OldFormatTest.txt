@@ -1,0 +1,257 @@
+{
+  "preserveQuestionOrder": false,
+  "preserveRoundOrder": false,
+  "author": "arunaromatics",
+  "questions": [
+    {
+      "category": "'General' Knowledge",
+      "question": "Which of these car brands is NOT owned by General Motors?",
+      "correct": "Jeep",
+      "incorrectAnswers": [
+        "Buick",
+        "Cadillac",
+        "Chevrolet"
+      ]
+    },
+    {
+      "category": "'General' Knowledge",
+      "question": "Which actor played Johnnie Gray in the 1926 silent comedy 'The General', inspired by an event during the American Civil War?",
+      "correct": "Buster Keaton",
+      "incorrectAnswers": [
+        "Charlie Chaplin",
+        "Fatty Arbuckle",
+        "Harold Lloyd"
+      ]
+    },
+    {
+      "category": "'General' Knowledge",
+      "question": "A Secretary General of the UN has NEVER been from which of these countries?",
+      "correct": "Finland",
+      "incorrectAnswers": [
+        "Austria",
+        "Egypt",
+        "Ghana"
+      ]
+    },
+    {
+      "category": "'General' Knowledge",
+      "question": "The General is a newspaper written in the language of Malayalam from which country?",
+      "correct": "India",
+      "incorrectAnswers": [
+        "Sri Lanka",
+        "Malaysia",
+        "Pakistan"
+      ]
+    },
+    {
+      "category": "'General' Knowledge",
+      "question": "'I Am the Very Model of a Modern Major-General' is a song from which Gilbert and Sullivan work?",
+      "correct": "The Pirates of Penzance",
+      "incorrectAnswers": [
+        "H.M.S. Pinafore",
+        "The Yeomen of the Guard",
+        "Iolanthe"
+      ]
+    },
+    {
+      "category": "General 'Knowledge'",
+      "question": "Which of the following is the opening line of the ABBA song 'Knowing Me, Knowing You'?",
+      "correct": "No more carefree laughter",
+      "incorrectAnswers": [
+        "They passed me by",
+        "If you change your mind",
+        "Where are those happy days"
+      ]
+    },
+    {
+      "category": "General 'Knowledge'",
+      "question": "The British television channel 'BBC Knowledge' was closed in 2002 and replaced with which other channel?",
+      "correct": "BBC 4",
+      "incorrectAnswers": [
+        "BBC 3",
+        "BBC News",
+        "BBC Parliament"
+      ]
+    },
+    {
+      "category": "General 'Knowledge'",
+      "question": "Which British department store recently abandoned its 'Never Knowingly Undersold' price pledge?",
+      "correct": "John Lewis",
+      "incorrectAnswers": [
+        "TJ Hughes",
+        "Marks and Spencer",
+        "House of Fraser"
+      ]
+    },
+    {
+      "category": "General 'Knowledge'",
+      "question": "Which of these songs appears in the same musical as the song 'I Know Him So Well'?",
+      "correct": "One Night in Bangkok",
+      "incorrectAnswers": [
+        "Heaven On Their Minds",
+        "Call Me Rusty",
+        "Close Every Door"
+      ]
+    },
+    {
+      "category": "General 'Knowledge'",
+      "question": "Which of these actors did NOT star in the 1997 film 'I Know What You Did Last Summer'?",
+      "correct": "Rei Hance",
+      "incorrectAnswers": [
+        "Jennifer Love Hewitt",
+        "Sarah Michelle Gellar",
+        "Anne Heche"
+      ]
+    },
+    {
+      "category": "General Kn'owl'edge",
+      "question": "Which of these people once played for the English football club nicknamed 'The Owls'?",
+      "correct": "Chris Waddle",
+      "incorrectAnswers": [
+        "John Barnes",
+        "Ian Wright",
+        "Andy Cole"
+      ]
+    },
+    {
+      "category": "General Kn'owl'edge",
+      "question": "Harry Potter sits his 'O.W.L' exams in which book?",
+      "correct": "Harry Potter and the Order of the Phoenix",
+      "incorrectAnswers": [
+        "Harry Potter and the Goblet of Fire",
+        "Harry Potter and the Half-Blood Prince",
+        "Harry Potter and the Deathly Hallows"
+      ]
+    },
+    {
+      "category": "General Kn'owl'edge",
+      "question": "'The Big Powerful Owl', an 8 metre tall statue of an owl, is a tourist attraction in which Australian city?",
+      "correct": "Canberra",
+      "incorrectAnswers": [
+        "Melbourne",
+        "Perth",
+        "Brisbane"
+      ]
+    },
+    {
+      "category": "General Kn'owl'edge",
+      "question": "The Owl City song 'Fireflies' was released in the same year as which of these other songs?",
+      "correct": "Empire State of Mind",
+      "incorrectAnswers": [
+        "Crank That (Soulja Boy)",
+        "Party Rock Anthem",
+        "Blurred Lines"
+      ]
+    },
+    {
+      "category": "General Kn'owl'edge",
+      "question": "'An Occurance at Owl Creek Bridge' is a story by which American author?",
+      "correct": "Ambrose Bierce",
+      "incorrectAnswers": [
+        "Stephen Crane",
+        "Ernest Hemmingway",
+        "Jack London"
+      ]
+    },
+    {
+      "category": "'G'eneral 'K'nowledge",
+      "question": "When Guz Khan came second in his series of 'Taskmaster', who won?",
+      "correct": "Morgana Robinson",
+      "incorrectAnswers": [
+        "Mike Wozniak",
+        "Sarah Kendall",
+        "Daisy May Cooper"
+      ]
+    },
+    {
+      "category": "'G'eneral 'K'nowledge",
+      "question": "Which of these colours is NOT featured in the lyrics of the Mika song 'Grace Kelly'?",
+      "correct": "Black",
+      "incorrectAnswers": [
+        "Green",
+        "Violet",
+        "Blue"
+      ]
+    },
+    {
+      "category": "'G'eneral 'K'nowledge",
+      "question": "Which of these English monarchs was born in the same century as Genghis Khan?",
+      "correct": "Henry II",
+      "incorrectAnswers": [
+        "William II",
+        "Edward II",
+        "Richard II"
+      ]
+    },
+    {
+      "category": "'G'eneral 'K'nowledge",
+      "question": "Chess grandmaster Garry Kasparov was born in which city, the host of the 2012 Eurovision Song Contest?",
+      "correct": "Baku",
+      "incorrectAnswers": [
+        "Moscow",
+        "Kyiv",
+        "Tel Aviv"
+      ]
+    },
+    {
+      "category": "'G'eneral 'K'nowledge",
+      "question": "Gladys Knight recorded the theme song to which James Bond film?",
+      "correct": "License to Kill",
+      "incorrectAnswers": [
+        "A View to a Kill",
+        "Tomorrow Never Dies",
+        "Die Another Day"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "question": "According to the Electromagnetic Spectrum, which of these waves has the longest wavelength?",
+      "correct": "Radio Waves",
+      "incorrectAnswers": [
+        "Microwaves",
+        "X-Rays",
+        "Gamma Rays"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "question": "The shortest verse in the King James Bible occurs shortly before which event?",
+      "correct": "The Raising of Lazarus",
+      "incorrectAnswers": [
+        "The Transfiguration",
+        "Jesus Walking on Water",
+        "The Sermon on the Mount"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "question": "The Mason-Dixon line does NOT mark part of the border of which of these states?",
+      "correct": "New Jersey",
+      "incorrectAnswers": [
+        "Delaware",
+        "Maryland",
+        "West Virginia"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "question": "What first name links a painter born in Seville in 1599, and an Argentine footballer?",
+      "correct": "Diego",
+      "incorrectAnswers": [
+        "Lionel",
+        "Francisco",
+        "Pablo"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "question": "Which of these people has NEVER been a host of 'Robot Wars'?",
+      "correct": "Robert Llewellyn",
+      "incorrectAnswers": [
+        "Craig Charles",
+        "Dara O'Briain",
+        "Jeremy Clarkson"
+      ]
+    }
+  ]
+}

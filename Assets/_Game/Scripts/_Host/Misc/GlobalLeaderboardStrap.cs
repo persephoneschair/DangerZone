@@ -1,3 +1,4 @@
+﻿using NaughtyAttributes;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -7,9 +8,30 @@ using UnityEngine.UI;
 
 public class GlobalLeaderboardStrap : MonoBehaviour
 {
+    public enum StrapColor
+    { 
+        TiedInDZ,
+        InBoneyard,
+        Correct,
+        Incorrect,
+        LockedIn,
+        BoneyardCorrect,
+        BoneyardIncorrect,
+        Nerfed
+    };
+
+    public enum ButtonDisplay
+    {
+        Available,
+        Nerfed,
+        Multiplied,
+        Unavailable
+    }
+
     public Vector3 startPos;
     public PlayerObject containedPlayer;
 
+    public TextMeshProUGUI ordinalNumberMesh;
     public TextMeshProUGUI playerNameMesh;
     public TextMeshProUGUI totalCorrectMesh;
     public RawImage avatarRend;
@@ -23,10 +45,20 @@ public class GlobalLeaderboardStrap : MonoBehaviour
     private Vector3 targetPosition;
     private float elapsedTime = 0;
 
-    public void SetUpStrap()
+    public Image bonusButton;
+    public TextMeshProUGUI bonusText;
+    public Color[] buttonColors;
+    private string[] buttonText = new string[4] { "AVAILABLE", "NERFED", "<color=black><b><size=175%>x2</size></b></color>", "<color=red>SPENT</color>" };
+
+
+    public RawImage dzLine;
+    public bool isBoneyardStrap;
+
+    public void SetUpStrap(int ordinal)
     {
         startPos = GetComponent<RectTransform>().localPosition;
         targetPosition = startPos;
+        ordinalNumberMesh.text = ordinal.ToString();
         playerNameMesh.text = "";
         totalCorrectMesh.text = "";
         gameObject.SetActive(false);
@@ -44,27 +76,35 @@ public class GlobalLeaderboardStrap : MonoBehaviour
             pl.strap = this;
         else
             pl.cloneStrap = this;
+
+        if(pl.isEliminated)
+        {
+            ordinalNumberMesh.text = "💀";
+            SetStrapColor(StrapColor.InBoneyard);
+            SetButtonDisplay(ButtonDisplay.Unavailable);
+        }
+        else
+        {
+            SetStrapColor(StrapColor.Correct);
+            SetButtonDisplay(ButtonDisplay.Available);
+        }
     }
 
-    public void SetBackgroundColor(bool hotseat)
+    public void ToggleDZLine(bool active = false)
     {
-        backgroundRend.color = hotseat ? backgroundCols[0] : backgroundCols[1];
-        borderRend.color = hotseat ? borderCols[0] : borderCols[1];
-        totalCorrectMesh.text = containedPlayer.points.ToString();
+        dzLine.enabled = active;
     }
 
-    public void SetCorrectOrIncorrectColor(bool correct)
+    public void SetStrapColor(StrapColor col)
     {
-        backgroundRend.color = correct ? backgroundCols[2] : backgroundCols[3];
-        borderRend.color = correct ? borderCols[2] : borderCols[3];
-        totalCorrectMesh.text = containedPlayer.points.ToString();
+        backgroundRend.color = backgroundCols[(int)col];
+        borderRend.color = borderCols[(int)col];
     }
 
-    public void SetLockedInColor()
+    public void SetButtonDisplay(ButtonDisplay disp)
     {
-        backgroundRend.color = backgroundCols[4];
-        borderRend.color = borderCols[4];
-        totalCorrectMesh.text = containedPlayer.points.ToString();
+        bonusButton.color = buttonColors[(int)disp];
+        bonusText.text = buttonText[(int)disp];
     }
 
     public void MoveStrap(Vector3 targetPos, int i)

@@ -1,0 +1,557 @@
+{
+  "author": "arunaromatics",
+  "preserveRoundOrder": false,
+  "preserveQuestionOrder": false,
+  "rounds": [
+    {
+      "category": "'General' Knowledge",
+      "questions": [
+        {
+          "questionText": "Which of these car brands is NOT owned by General Motors?",
+          "answers": [
+            {
+              "answerText": "Jeep",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Buick",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Cadillac",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Chevrolet",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Which actor played Johnnie Gray in the 1926 silent comedy 'The General', inspired by an event during the American Civil War?",
+          "answers": [
+            {
+              "answerText": "Buster Keaton",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Charlie Chaplin",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Fatty Arbuckle",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Harold Lloyd",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "A Secretary General of the UN has NEVER been from which of these countries?",
+          "answers": [
+            {
+              "answerText": "Finland",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Austria",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Egypt",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Ghana",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "The General is a newspaper written in the language of Malayalam from which country?",
+          "answers": [
+            {
+              "answerText": "India",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Sri Lanka",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Malaysia",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Pakistan",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "'I Am the Very Model of a Modern Major-General' is a song from which Gilbert and Sullivan work?",
+          "answers": [
+            {
+              "answerText": "The Pirates of Penzance",
+              "isCorrect": true
+            },
+            {
+              "answerText": "H.M.S. Pinafore",
+              "isCorrect": false
+            },
+            {
+              "answerText": "The Yeomen of the Guard",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Iolanthe",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "General 'Knowledge'",
+      "questions": [
+        {
+          "questionText": "Which of the following is the opening line of the ABBA song 'Knowing Me, Knowing You'?",
+          "answers": [
+            {
+              "answerText": "No more carefree laughter",
+              "isCorrect": true
+            },
+            {
+              "answerText": "They passed me by",
+              "isCorrect": false
+            },
+            {
+              "answerText": "If you change your mind",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Where are those happy days",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "The British television channel 'BBC Knowledge' was closed in 2002 and replaced with which other channel?",
+          "answers": [
+            {
+              "answerText": "BBC 4",
+              "isCorrect": true
+            },
+            {
+              "answerText": "BBC 3",
+              "isCorrect": false
+            },
+            {
+              "answerText": "BBC News",
+              "isCorrect": false
+            },
+            {
+              "answerText": "BBC Parliament",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Which British department store recently abandoned its 'Never Knowingly Undersold' price pledge?",
+          "answers": [
+            {
+              "answerText": "John Lewis",
+              "isCorrect": true
+            },
+            {
+              "answerText": "TJ Hughes",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Marks and Spencer",
+              "isCorrect": false
+            },
+            {
+              "answerText": "House of Fraser",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Which of these songs appears in the same musical as the song 'I Know Him So Well'?",
+          "answers": [
+            {
+              "answerText": "One Night in Bangkok",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Heaven On Their Minds",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Call Me Rusty",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Close Every Door",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Which of these actors did NOT star in the 1997 film 'I Know What You Did Last Summer'?",
+          "answers": [
+            {
+              "answerText": "Rei Hance",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Jennifer Love Hewitt",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Sarah Michelle Gellar",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Anne Heche",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "General Kn'owl'edge",
+      "questions": [
+        {
+          "questionText": "Which of these people once played for the English football club nicknamed 'The Owls'?",
+          "answers": [
+            {
+              "answerText": "Chris Waddle",
+              "isCorrect": true
+            },
+            {
+              "answerText": "John Barnes",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Ian Wright",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Andy Cole",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Harry Potter sits his 'O.W.L' exams in which book?",
+          "answers": [
+            {
+              "answerText": "Harry Potter and the Order of the Phoenix",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Harry Potter and the Goblet of Fire",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Harry Potter and the Half-Blood Prince",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Harry Potter and the Deathly Hallows",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "'The Big Powerful Owl', an 8 metre tall statue of an owl, is a tourist attraction in which Australian city?",
+          "answers": [
+            {
+              "answerText": "Canberra",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Melbourne",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Perth",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Brisbane",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "The Owl City song 'Fireflies' was released in the same year as which of these other songs?",
+          "answers": [
+            {
+              "answerText": "Empire State of Mind",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Crank That (Soulja Boy)",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Party Rock Anthem",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Blurred Lines",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "'An Occurance at Owl Creek Bridge' is a story by which American author?",
+          "answers": [
+            {
+              "answerText": "Ambrose Bierce",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Stephen Crane",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Ernest Hemmingway",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Jack London",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "'G'eneral 'K'nowledge",
+      "questions": [
+        {
+          "questionText": "When Guz Khan came second in his series of 'Taskmaster', who won?",
+          "answers": [
+            {
+              "answerText": "Morgana Robinson",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Mike Wozniak",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Sarah Kendall",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Daisy May Cooper",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Which of these colours is NOT featured in the lyrics of the Mika song 'Grace Kelly'?",
+          "answers": [
+            {
+              "answerText": "Black",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Green",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Violet",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Blue",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Which of these English monarchs was born in the same century as Genghis Khan?",
+          "answers": [
+            {
+              "answerText": "Henry II",
+              "isCorrect": true
+            },
+            {
+              "answerText": "William II",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Edward II",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Richard II",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Chess grandmaster Garry Kasparov was born in which city, the host of the 2012 Eurovision Song Contest?",
+          "answers": [
+            {
+              "answerText": "Baku",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Moscow",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Kyiv",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Tel Aviv",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Gladys Knight recorded the theme song to which James Bond film?",
+          "answers": [
+            {
+              "answerText": "License to Kill",
+              "isCorrect": true
+            },
+            {
+              "answerText": "A View to a Kill",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Tomorrow Never Dies",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Die Another Day",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "questions": [
+        {
+          "questionText": "According to the Electromagnetic Spectrum, which of these waves has the longest wavelength?",
+          "answers": [
+            {
+              "answerText": "Radio Waves",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Microwaves",
+              "isCorrect": false
+            },
+            {
+              "answerText": "X-Rays",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Gamma Rays",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "The shortest verse in the King James Bible occurs shortly before which event?",
+          "answers": [
+            {
+              "answerText": "The Raising of Lazarus",
+              "isCorrect": true
+            },
+            {
+              "answerText": "The Transfiguration",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Jesus Walking on Water",
+              "isCorrect": false
+            },
+            {
+              "answerText": "The Sermon on the Mount",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "The Mason-Dixon line does NOT mark part of the border of which of these states?",
+          "answers": [
+            {
+              "answerText": "New Jersey",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Delaware",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Maryland",
+              "isCorrect": false
+            },
+            {
+              "answerText": "West Virginia",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "What first name links a painter born in Seville in 1599, and an Argentine footballer?",
+          "answers": [
+            {
+              "answerText": "Diego",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Lionel",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Francisco",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Pablo",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Which of these people has NEVER been a host of 'Robot Wars'?",
+          "answers": [
+            {
+              "answerText": "Robert Llewellyn",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Craig Charles",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Dara O'Briain",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Jeremy Clarkson",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

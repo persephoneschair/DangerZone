@@ -10,14 +10,14 @@ public class LobbyManager : SingletonMonoBehaviour<LobbyManager>
 
     public TextMeshProUGUI welcomeMessageMesh;
     public Animator lobbyCodeAnim;
-    private const string welcomeMessage = "";
+    private const string welcomeMessage = "Welcome to\n<font=DZLogo><gradient=\"DZGrad\"><size=200%>DANGERZONE</size></font></gradient>\n" +
+      "" +
+    "Playing on a mobile device? Scan the QR code!\n\n\n\n\n\n\n" +
+    "" +
+    "Desktop or laptop? Please visit:\n<color=yellow>https://persephoneschair.itch.io/gamenight</color>\n" +
+    "<size=300%><color=#F8A3A3>[ABCD]</color>";
 
-    //"Welcome to <font=RiskyBusiness><size=200%>GAME NAME</size></font>\n\n" +
-    //  "" +
-    //"Playing on a mobile device? Scan the QR code!\n\n\n\n\n\n\n" +
-    //"" +
-    //"Desktop or laptop? Please visit:\n<color=yellow>https://persephoneschair.itch.io/gamenight</color>\n" +
-    //"<size=300%><color=#F8A3A3>[ABCD]</color>";
+    
 
     private const string permaMessage = "To join the game, please visit <color=yellow>https://persephoneschair.itch.io/gamenight</color> and join with the room code <color=#F8A3A3>[ABCD]</color>";
 
@@ -28,16 +28,29 @@ public class LobbyManager : SingletonMonoBehaviour<LobbyManager>
     public void OnOpenLobby()
     {
         lobbyCodeAnim.SetTrigger("toggle");
-        welcomeMessageMesh.text = welcomeMessage.Replace("[ABCD]", HostManager.Get.host.RoomCode.ToUpperInvariant());
+        string spacedCode = string.Join(" ", HostManager.Get.host.RoomCode.ToCharArray());
+        welcomeMessageMesh.text = welcomeMessage.Replace("[ABCD]", spacedCode.ToUpperInvariant());
     }
 
     [Button]
     public void OnLockLobby()
     {
-        lateEntry = true;
-        lobbyCodeAnim.SetTrigger("toggle");
-        permaCodeMesh.text = permaMessage.Replace("[ABCD]", HostManager.Get.host.RoomCode.ToUpperInvariant());
-        Invoke("TogglePermaCode", 1f);
+        if(PlayerManager.Get.players.Count < ((QuestionManager.currentPack.rounds.Count - 1) + Operator.Get.playerFinalCount))
+        {
+            DebugLog.Print("THERE ARE NOT ENOUGH PLAYERS FOR THE CURRENT QUESTION PACK AND GAME SETTINGS", DebugLog.StyleOption.Bold, DebugLog.ColorOption.Red);
+            return;
+        }
+        else
+        {
+            string spacedCode = string.Join(" ", HostManager.Get.host.RoomCode.ToCharArray());
+            lateEntry = true;
+            lobbyCodeAnim.SetTrigger("toggle");
+            permaCodeMesh.text = permaMessage.Replace("[ABCD]", spacedCode.ToUpperInvariant());
+            Invoke("TogglePermaCode", 1f);
+            GameplayManager.Get.currentStage++;
+            AudioManager.Get.Play(AudioManager.OneShotClip.Elimination);
+            LeaderboardManager.Get.SetStartRoundDangerZone();
+        }
     }
 
     public void TogglePermaCode()

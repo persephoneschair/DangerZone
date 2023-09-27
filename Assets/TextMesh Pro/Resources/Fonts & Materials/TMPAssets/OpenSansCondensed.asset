@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: OpenSansCondensed
   m_EditorClassIdentifier: 
-  hashCode: -1886916217
+  hashCode: 692252228
   material: {fileID: 3345727450480859372}
-  materialHashCode: -529311289
+  materialHashCode: 1964895972
   m_Version: 1.1.0
   m_SourceFontFileGUID: c9aa528f44bcb8f49b82fc07a892e838
   m_SourceFontFile_EditorRef: {fileID: 0}
@@ -5644,7 +5644,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: RegularText Material
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: UNDERLAY_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -5684,6 +5684,7 @@ Material:
     - _BumpFace: 0
     - _BumpOutline: 0
     - _ColorMask: 15
+    - _CullMode: 0
     - _Diffuse: 0.5
     - _FaceDilate: 0.15
     - _FaceUVSpeedX: 0
@@ -5704,7 +5705,7 @@ Material:
     - _Reflectivity: 10
     - _ScaleRatioA: 0.8333333
     - _ScaleRatioB: 0.5520833
-    - _ScaleRatioC: 0.5520833
+    - _ScaleRatioC: 0.27604166
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -5717,9 +5718,9 @@ Material:
     - _StencilWriteMask: 255
     - _TextureHeight: 512
     - _TextureWidth: 512
-    - _UnderlayDilate: 0
-    - _UnderlayOffsetX: 0
-    - _UnderlayOffsetY: 0
+    - _UnderlayDilate: 1
+    - _UnderlayOffsetX: 1
+    - _UnderlayOffsetY: -1
     - _UnderlaySoftness: 0
     - _VertexOffsetX: 0
     - _VertexOffsetY: 0

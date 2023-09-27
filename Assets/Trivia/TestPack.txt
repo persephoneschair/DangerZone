@@ -1,0 +1,337 @@
+{
+  "author": "royal_flush",
+  "preserveRoundOrder": false,
+  "preserveQuestionOrder": false,
+  "rounds": [
+    {
+      "category": "Category #1",
+      "questions": [
+        {
+          "questionText": "This is a test question. The answer is 42.",
+          "answers": [
+            {
+              "answerText": "42",
+              "isCorrect": true
+            },
+            {
+              "answerText": "37",
+              "isCorrect": false
+            },
+            {
+              "answerText": "25",
+              "isCorrect": false
+            },
+            {
+              "answerText": "13",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "This is a test question. The answer is 12.",
+          "answers": [
+            {
+              "answerText": "12",
+              "isCorrect": true
+            },
+            {
+              "answerText": "37",
+              "isCorrect": false
+            },
+            {
+              "answerText": "25",
+              "isCorrect": false
+            },
+            {
+              "answerText": "13",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "This is a test question. The answer is 32.",
+          "answers": [
+            {
+              "answerText": "32",
+              "isCorrect": true
+            },
+            {
+              "answerText": "37",
+              "isCorrect": false
+            },
+            {
+              "answerText": "25",
+              "isCorrect": false
+            },
+            {
+              "answerText": "13",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "This is a test question. The answer is 142.",
+          "answers": [
+            {
+              "answerText": "142",
+              "isCorrect": true
+            },
+            {
+              "answerText": "37",
+              "isCorrect": false
+            },
+            {
+              "answerText": "25",
+              "isCorrect": false
+            },
+            {
+              "answerText": "13",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "This is a test question. The answer is 57.",
+          "answers": [
+            {
+              "answerText": "57",
+              "isCorrect": true
+            },
+            {
+              "answerText": "37",
+              "isCorrect": false
+            },
+            {
+              "answerText": "25",
+              "isCorrect": false
+            },
+            {
+              "answerText": "13",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Category #2",
+      "questions": [
+        {
+          "questionText": "This is a test question. The answer is 42.",
+          "answers": [
+            {
+              "answerText": "42",
+              "isCorrect": true
+            },
+            {
+              "answerText": "37",
+              "isCorrect": false
+            },
+            {
+              "answerText": "25",
+              "isCorrect": false
+            },
+            {
+              "answerText": "13",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "This is a test question. The answer is 12.",
+          "answers": [
+            {
+              "answerText": "12",
+              "isCorrect": true
+            },
+            {
+              "answerText": "37",
+              "isCorrect": false
+            },
+            {
+              "answerText": "25",
+              "isCorrect": false
+            },
+            {
+              "answerText": "13",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "This is a test question. The answer is 32.",
+          "answers": [
+            {
+              "answerText": "32",
+              "isCorrect": true
+            },
+            {
+              "answerText": "37",
+              "isCorrect": false
+            },
+            {
+              "answerText": "25",
+              "isCorrect": false
+            },
+            {
+              "answerText": "13",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "This is a test question. The answer is 142.",
+          "answers": [
+            {
+              "answerText": "142",
+              "isCorrect": true
+            },
+            {
+              "answerText": "37",
+              "isCorrect": false
+            },
+            {
+              "answerText": "25",
+              "isCorrect": false
+            },
+            {
+              "answerText": "13",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "This is a test question. The answer is 57.",
+          "answers": [
+            {
+              "answerText": "57",
+              "isCorrect": true
+            },
+            {
+              "answerText": "37",
+              "isCorrect": false
+            },
+            {
+              "answerText": "25",
+              "isCorrect": false
+            },
+            {
+              "answerText": "13",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Category #3",
+      "questions": [
+        {
+          "questionText": "This is a test question. The answer is 42.",
+          "answers": [
+            {
+              "answerText": "42",
+              "isCorrect": true
+            },
+            {
+              "answerText": "37",
+              "isCorrect": false
+            },
+            {
+              "answerText": "25",
+              "isCorrect": false
+            },
+            {
+              "answerText": "13",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "This is a test question. The answer is 12.",
+          "answers": [
+            {
+              "answerText": "12",
+              "isCorrect": true
+            },
+            {
+              "answerText": "37",
+              "isCorrect": false
+            },
+            {
+              "answerText": "25",
+              "isCorrect": false
+            },
+            {
+              "answerText": "13",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "This is a test question. The answer is 32.",
+          "answers": [
+            {
+              "answerText": "32",
+              "isCorrect": true
+            },
+            {
+              "answerText": "37",
+              "isCorrect": false
+            },
+            {
+              "answerText": "25",
+              "isCorrect": false
+            },
+            {
+              "answerText": "13",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "This is a test question. The answer is 142.",
+          "answers": [
+            {
+              "answerText": "142",
+              "isCorrect": true
+            },
+            {
+              "answerText": "37",
+              "isCorrect": false
+            },
+            {
+              "answerText": "25",
+              "isCorrect": false
+            },
+            {
+              "answerText": "13",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "This is a test question. The answer is 57.",
+          "answers": [
+            {
+              "answerText": "57",
+              "isCorrect": true
+            },
+            {
+              "answerText": "37",
+              "isCorrect": false
+            },
+            {
+              "answerText": "25",
+              "isCorrect": false
+            },
+            {
+              "answerText": "13",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

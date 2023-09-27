@@ -8,29 +8,16 @@ using Newtonsoft.Json;
 using NaughtyAttributes;
 using System.Linq;
 using TMPro;
+using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 
-public class GameplayPennys : MonoBehaviour
+public class GameplayPennys : SingletonMonoBehaviour<GameplayPennys>
 {
-    #region Init
-
-    public static GameplayPennys GetPennys { get; private set; }
-    private void Awake()
-    {
-        if (GetPennys != null && GetPennys != this)
-            Destroy(this);
-        else
-            GetPennys = this;
-    }
-
-    #endregion
-
     private PlayerShell playerList;
     private MedalTableObject medalList;
-    private List<LeaderboardObject> leaderboardList;
     private readonly string path = @"D:\Unity Projects\HerokuPennyData\PennyStorage";
 
     public int authorPennys;
-    [Range (1, 10)] public int multiplyFactor;
+    [Range (1, 50)] public int multiplyFactor;
     public string gameName;
 
 
@@ -51,11 +38,6 @@ public class GameplayPennys : MonoBehaviour
     private void LoadMedalJSON()
     {
         medalList = JsonConvert.DeserializeObject<MedalTableObject>(File.ReadAllText(path + $@"\{gameName}.txt"));
-    }
-
-    private void LoadLeaderboardJSON()
-    {
-        leaderboardList = JsonConvert.DeserializeObject<List<LeaderboardObject>>(File.ReadAllText(path + $@"\{gameName}Leaderboard.txt"));
     }
 
     private void AwardPennys()
@@ -90,18 +72,52 @@ public class GameplayPennys : MonoBehaviour
 
     private void AwardMedals()
     {
-        List<PlayerObject> topTwo = PlayerManager.Get.players.Where(x => !x.eliminated).OrderByDescending(x => x.points).ToList();
         LoadMedalJSON();
 
-        if(topTwo.Count == 2)
+        var x = PlayerManager.Get.players.Where(x => !x.isEliminated).OrderByDescending(x => x.points).ToList();
+        int medal = 0;
+
+        for (int i = 0; i < x.Count; i++)
         {
-            medalList.goldMedallists.Add(topTwo[0].twitchName.ToLowerInvariant());
-            medalList.silverMedallists.Add(topTwo[1].twitchName.ToLowerInvariant());
+            if (i == 0)
+                SwitchMedals(x[i], medal);
+            else
+            {
+                if (x[i].points == x[i - 1].points)
+                    SwitchMedals(x[i], medal);
+                else
+                {
+                    medal++;
+                    if (medal == 3)
+                        break;
+
+                    SwitchMedals(x[i], medal);
+                }
+            }
         }
 
-        List<PlayerObject> lobbyOrdered = PlayerManager.Get.players.Where(x => x.eliminated).OrderByDescending(x => x.totalCorrect).ToList();
-        foreach(PlayerObject player in lobbyOrdered.Where(x => x.totalCorrect == lobbyOrdered[0].totalCorrect))
-            medalList.lobbyMedallists.Add(player.twitchName.ToLowerInvariant());
+        x = PlayerManager.Get.players.Where(x => x.isEliminated).OrderByDescending(x => x.totalCorrect).ToList();
+        int highScore = x.FirstOrDefault().totalCorrect;
+        foreach (PlayerObject p in x.Where(x => x.totalCorrect == highScore))
+            medalList.lobbyMedallists.Add(p.twitchName.ToLowerInvariant());
+    }
+
+    void SwitchMedals(PlayerObject p, int medal)
+    {
+        switch (medal)
+        {
+            case 0:
+                medalList.goldMedallists.Add(p.twitchName.ToLowerInvariant());
+                break;
+
+            case 1:
+                medalList.silverMedallists.Add(p.twitchName.ToLowerInvariant());
+                break;
+
+            case 2:
+                medalList.bronzeMedallists.Add(p.twitchName.ToLowerInvariant());
+                break;
+        }
     }
 
     private void CreateNewPlayer(PlayerObject p)
@@ -137,7 +153,6 @@ public class GameplayPennys : MonoBehaviour
 
         if (!string.IsNullOrEmpty(gameName))
         {
-            medalPath = path + $@"\{gameName}Test.txt";
             newDataContent = JsonConvert.SerializeObject(medalList);
             File.WriteAllText(medalPath, newDataContent);
         }

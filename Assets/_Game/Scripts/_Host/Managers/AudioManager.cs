@@ -11,10 +11,18 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
 
     private bool playedUnique;
 
-    public enum OneShotClip { Impact, PodiumAnim, ClockTick, PlayerAnswer, WrongInFinal, ClockArm, Rotation, QStartAndEnd, PointTick };
+    public enum OneShotClip
+    {
+        MainTheme,
+        Fanfare,
+        LockIn,
+        QuestionLoop,
+        Tiebreaker,
+        Elimination
+    };
     public AudioClip[] stings;
 
-    public enum LoopClip { Titles, GameplayLoop, WinTheme, Credits };
+    public enum LoopClip { AmbientLoop };
     public AudioClip[] loops;
 
     #region Public Methods

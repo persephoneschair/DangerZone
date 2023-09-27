@@ -21,6 +21,7 @@ public class HostManager : SingletonMonoBehaviour<HostManager>
     public void OnPlayerJoins(Player joinedPlayer)
     {
         //This will handle any player joining with a valid Twitch name stored inside their client app
+        //Although, it doesn't appear to be getting hit with a stored client
         if (joinedPlayer.Name.Contains('|'))
         {
             string[] name = joinedPlayer.Name.Split('|');
@@ -101,6 +102,10 @@ public class HostManager : SingletonMonoBehaviour<HostManager>
         //[0] = question
         //[1] = (int)time in seconds
 
+        //Numerical Question
+        //[0] = question
+        //[1] = (int)time in seconds
+
         //Multiple Choice / Multi-select
         //[0] = question
         //[1] = (int)time in seconds
@@ -127,6 +132,9 @@ public class HostManager : SingletonMonoBehaviour<HostManager>
         switch (eventType)
         {
             case EventLibrary.ClientEventType.StoredValidation:
+                if (Operator.Get.fastValidation || Operator.Get.recoveryMode)
+                    return;
+
                 string[] str = data.Split('|').ToArray();
                 TwitchManager.Get.testUsername = str[0];
                 TwitchManager.Get.testMessage = str[1];
@@ -141,6 +149,12 @@ public class HostManager : SingletonMonoBehaviour<HostManager>
                 SendPayloadToClient(p, EventLibrary.HostEventType.Information, "Answer received");
                 break;
 
+            case EventLibrary.ClientEventType.NumericalQuestion:
+                //This will have an array length of [1]
+                p.HandleTiebreakerSubmission(data.Split('|'));
+                SendPayloadToClient(p, EventLibrary.HostEventType.Information, "Answer received");
+                break;
+
             case EventLibrary.ClientEventType.MultipleChoiceQuestion:
                 //This will have an array length of [1]
                 p.HandlePlayerScoring(data.Split('|'));
@@ -149,6 +163,12 @@ public class HostManager : SingletonMonoBehaviour<HostManager>
 
             case EventLibrary.ClientEventType.MultiSelectQuestion:
                 //This will have a variable array length
+                p.HandlePlayerScoring(data.Split('|'));
+                SendPayloadToClient(p, EventLibrary.HostEventType.Information, "Answer received");
+                break;
+
+            case EventLibrary.ClientEventType.DangerZoneQuestion:
+                //This will have an array length of [1] or [2]
                 p.HandlePlayerScoring(data.Split('|'));
                 SendPayloadToClient(p, EventLibrary.HostEventType.Information, "Answer received");
                 break;

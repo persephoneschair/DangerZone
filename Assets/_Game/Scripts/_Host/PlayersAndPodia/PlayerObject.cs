@@ -1,4 +1,5 @@
 ﻿using Control;
+using NaughtyAttributes;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,18 +16,28 @@ public class PlayerObject
 
     public GlobalLeaderboardStrap strap;
     public GlobalLeaderboardStrap cloneStrap;
+    public DZAvatarLerpControl floorAvatar;
 
     public string twitchName;
     public Texture profileImage;
 
-    public bool eliminated;
+    public bool isInDangerZone;
+    public bool isInTiebreaker;
+    public bool isEliminated;
+    public bool helpUsed;
+    public bool nerfed;
+    public bool multiplier;
 
+    public int starterBoost;
     public int points;
+    public int pointsLastQ;
     public int totalCorrect;
     public string submission;
     public float submissionTime;
-    public bool flagForCondone;
+    public int tiebreakerSubmission;
     public bool wasCorrect;
+    public int dzAppearances;
+
 
     public PlayerObject(Player pl, string name)
     {
@@ -52,11 +63,11 @@ public class PlayerObject
             oldPlayer.playerClientID = playerClientID;
             oldPlayer.playerClientRef = playerClientRef;
             oldPlayer.playerName = playerName;
-            //oldPlayer.podium.playerNameMesh.text = playerName;
+
+            oldPlayer.strap.playerNameMesh.text = playerName;
+            oldPlayer.cloneStrap.playerNameMesh.text = playerName;
 
             otp = "";
-            //podium.containedPlayer = null;
-            //podium = null;
             playerClientRef = null;
             playerName = "";
 
@@ -70,30 +81,124 @@ public class PlayerObject
         otp = "";
         twitchName = name.ToLowerInvariant();
         profileImage = tx;
+        floorAvatar = DangerZoneManager.Get.GenerateNewFloorAvatar(this);
         //podium.avatarRend.material.mainTexture = profileImage;
-        if(!LobbyManager.Get.lateEntry)
-        {
 
-        }
-            //podium.InitialisePodium();
-        else
+        if(LobbyManager.Get.lateEntry && GameplayManager.Get.roundsPlayed != 0)
         {
-            points = 0;
-            eliminated = true;
-        }
-        HostManager.Get.SendPayloadToClient(this, EventLibrary.HostEventType.Validated, $"{playerName}|{points.ToString()}|{twitchName}");
+            isEliminated = true;
+            helpUsed = true;
+        }            
+
+        HostManager.Get.SendPayloadToClient(this, EventLibrary.HostEventType.Validated, $"{playerName}|{points.ToString()} POINTS|{twitchName}");
         PlayerManager.Get.players.Add(this);
         PlayerManager.Get.pendingPlayers.Remove(this);
         LeaderboardManager.Get.PlayerHasJoined(this);
+        SaveManager.BackUpData();
+
+        if (LobbyManager.Get.lateEntry && GameplayManager.Get.roundsPlayed != 0)
+        {
+            strap.avatarRend.material = LeaderboardManager.Get.grayscaleMat;
+            cloneStrap.avatarRend.material = LeaderboardManager.Get.grayscaleMat;
+        }
         //HostManager.GetHost.UpdateLeaderboards();
     }
 
     public void HandlePlayerScoring(string[] submittedAnswers)
     {
-        switch(GameplayManager.Get.currentRound)
+        multiplier = (submittedAnswers.Length == 2 && submittedAnswers[1] == "***MULTIPLY***") ? true : false;
+        nerfed = submittedAnswers[0] == "***NERF***" ? true : false;
+        wasCorrect = submittedAnswers[0] == GameplayManager.Get.mainRound.currentQuestion.answers.FirstOrDefault(x => x.isCorrect).answerText;
+
+        submissionTime = GlobalTimeManager.Get.elapsedTime;
+
+        strap.SetStrapColor(GlobalLeaderboardStrap.StrapColor.LockedIn);
+        cloneStrap.SetStrapColor(GlobalLeaderboardStrap.StrapColor.LockedIn);
+
+        AudioManager.Get.Play(AudioManager.OneShotClip.LockIn);
+
+        if (multiplier || nerfed)
         {
-            default:
-                break;
+            helpUsed = true;
+            if (nerfed)
+            {
+                pointsLastQ = GameplayManager.Get.mainRound.nerfPoints;
+                DebugLog.Print($"{playerName} (NERFED, {submissionTime.ToString("0.00")}s)", DebugLog.StyleOption.Bold, DebugLog.ColorOption.Blue);
+                return;
+            }
+                
+            else
+                DebugLog.Print($"{playerName} (MULTIPLIER)", DebugLog.StyleOption.Bold, DebugLog.ColorOption.Yellow);
+        }
+
+        if (wasCorrect)
+        {
+            totalCorrect++;
+            if (!isEliminated)
+            {
+                pointsLastQ = (multiplier ? 2 : 1) * GameplayManager.Get.mainRound.availablePoints;
+                GameplayManager.Get.mainRound.availablePoints--;
+                DebugLog.Print($"{playerName} ({submissionTime.ToString("0.00")}s)", DebugLog.StyleOption.Bold, DebugLog.ColorOption.Green);
+            }
+            else
+                DebugLog.Print($"{playerName} ({submissionTime.ToString("0.00")}s)", DebugLog.StyleOption.Italic, DebugLog.ColorOption.Green);
+        }
+        else
+        {
+            if(!isEliminated)
+                DebugLog.Print($"{playerName} ({submissionTime.ToString("0.00")}s)", DebugLog.StyleOption.Bold, DebugLog.ColorOption.Red);
+            else
+                DebugLog.Print($"{playerName} ({submissionTime.ToString("0.00")}s)", DebugLog.StyleOption.Italic, DebugLog.ColorOption.Red);
+        }
+    }
+
+    public void HandleTiebreakerSubmission(string[] submittedAnswers)
+    {
+        AudioManager.Get.Play(AudioManager.OneShotClip.LockIn);
+        tiebreakerSubmission = int.TryParse(submittedAnswers[0], out int g) ? g : int.MaxValue;
+        submissionTime = GlobalTimeManager.Get.elapsedTime;
+
+        DebugLog.Print($"{playerName}: {tiebreakerSubmission} ({submissionTime.ToString("0.00")}s)", DebugLog.StyleOption.Bold, DebugLog.ColorOption.Orange);
+
+        strap.SetStrapColor(GlobalLeaderboardStrap.StrapColor.LockedIn);
+        cloneStrap.SetStrapColor(GlobalLeaderboardStrap.StrapColor.LockedIn);
+    }
+
+    public void SetAsInDangerZone()
+    {
+        isInDangerZone = true;
+        strap.SetStrapColor(GlobalLeaderboardStrap.StrapColor.Incorrect);
+        cloneStrap.SetStrapColor(GlobalLeaderboardStrap.StrapColor.Incorrect);
+        dzAppearances++;
+    }
+
+    public void ClearQuestionVariables()
+    {
+        nerfed = false;
+        multiplier = false;
+        pointsLastQ = 0;
+        submission = "";
+        tiebreakerSubmission = -1;
+        submissionTime = 0;
+        wasCorrect = false;
+    }
+
+    public void ClearRoundVariables()
+    {
+        points = 0;
+        isInTiebreaker = false;
+
+        if (QuestionManager.IsFinalRound() || isEliminated)
+        {
+            helpUsed = true;
+            strap.SetButtonDisplay(GlobalLeaderboardStrap.ButtonDisplay.Unavailable);
+            cloneStrap.SetButtonDisplay(GlobalLeaderboardStrap.ButtonDisplay.Unavailable);
+        }
+        else
+        {
+            helpUsed = false;
+            strap.SetButtonDisplay(GlobalLeaderboardStrap.ButtonDisplay.Available);
+            cloneStrap.SetButtonDisplay(GlobalLeaderboardStrap.ButtonDisplay.Available);
         }
     }
 }
