@@ -34,7 +34,7 @@ public class RoundBase : MonoBehaviour
 
         GlobalTimeManager.Get.StagedResetClock();
 
-        questionBox.boxMesh.text = currentQuestion.questionText;
+        questionBox.boxMesh.text = $"<size=50%>{GameplayManager.nextQuestionIndex + 1} / {(Operator.Get.hideRoundCount ? "?" : QuestionManager.GetRoundQCount().ToString())}</size>\n{currentQuestion.questionText}";
         for (int i = 0; i < answerBoxes.Length; i++)
             answerBoxes[i].boxMesh.text = currentQuestion.answers[i].answerText;
 
@@ -67,11 +67,11 @@ public class RoundBase : MonoBehaviour
             {
                 help = "FALSE";
                 HostManager.Get.SendPayloadToClient(pl, EventLibrary.HostEventType.DangerZoneQuestion,
-                    $"<u><size=50%>#{GameplayManager.nextQuestionIndex + 1}/{QuestionManager.GetRoundQCount()}</size></u>\n{currentQuestion.questionText}|15|{string.Join("|", currentQuestion.answers.Select(x => x.answerText))}|{help}|0");
+                    $"<u><size=50%>#{GameplayManager.nextQuestionIndex + 1}/{(Operator.Get.hideRoundCount ? "?" : QuestionManager.GetRoundQCount().ToString())}</size></u>\n{currentQuestion.questionText}|15|{string.Join("|", currentQuestion.answers.Select(x => x.answerText))}|{help}|0");
             }
             else
                 HostManager.Get.SendPayloadToClient(pl, EventLibrary.HostEventType.DangerZoneQuestion,
-                        $"<u><size=50%>#{GameplayManager.nextQuestionIndex + 1}/{QuestionManager.GetRoundQCount()}</size></u>\n{currentQuestion.questionText}|15|{string.Join("|", currentQuestion.answers.Select(x => x.answerText))}|{help}|{nerfPoints}");
+                        $"<u><size=50%>#{GameplayManager.nextQuestionIndex + 1}/{(Operator.Get.hideRoundCount ? "?" : QuestionManager.GetRoundQCount().ToString())}</size></u>\n{currentQuestion.questionText}|15|{string.Join("|", currentQuestion.answers.Select(x => x.answerText))}|{help}|{nerfPoints}");
         }
         DebugLog.Print($"RESPONSES", DebugLog.StyleOption.Bold, DebugLog.ColorOption.Default);
         Invoke("OnQuestionEnded", 16f);

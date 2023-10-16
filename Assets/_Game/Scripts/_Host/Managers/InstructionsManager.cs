@@ -35,12 +35,12 @@ public class InstructionsManager : SingletonMonoBehaviour<InstructionsManager>
         instructionsAnim.SetTrigger("toggle");
         if (QuestionManager.IsFinalRound())
             instructionsMesh.text = finalInstructions.Replace("[ROUNDNAME]", QuestionManager.currentPack.rounds[GameplayManager.Get.roundsPlayed].category.ToUpperInvariant())
-                .Replace("[Q#]", Extensions.ForceFirstCharToUpper(Extensions.NumberToWords(QuestionManager.GetRoundQCount())));
+                .Replace("[Q#]", Operator.Get.hideRoundCount ? "Unknown" : Extensions.ForceFirstCharToUpper(Extensions.NumberToWords(QuestionManager.GetRoundQCount())));
         else
             instructionsMesh.text = instructions.Replace("[#]", (GameplayManager.Get.roundsPlayed + 1).ToString())
                 .Replace("[ROUNDNAME]", QuestionManager.currentPack.rounds[GameplayManager.Get.roundsPlayed].category.ToUpperInvariant())
                 .Replace("[###]", Extensions.NumberToWords(GameplayManager.Get.mainRound.nerfPoints))
-                .Replace("[Q#]", Extensions.ForceFirstCharToUpper(Extensions.NumberToWords(QuestionManager.GetRoundQCount())));
+                .Replace("[Q#]", Operator.Get.hideRoundCount ? "Unknown" : Extensions.ForceFirstCharToUpper(Extensions.NumberToWords(QuestionManager.GetRoundQCount())));
     }
 
     [Button]

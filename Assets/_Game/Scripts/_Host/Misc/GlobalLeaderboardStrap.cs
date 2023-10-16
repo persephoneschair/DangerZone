@@ -48,7 +48,7 @@ public class GlobalLeaderboardStrap : MonoBehaviour
     public Image bonusButton;
     public TextMeshProUGUI bonusText;
     public Color[] buttonColors;
-    private string[] buttonText = new string[4] { "AVAILABLE", "NERFED", "<color=black><b><size=175%>x2</size></b></color>", "<color=red>SPENT</color>" };
+    private string[] buttonText = new string[4] { "⭐", "➡", "<color=black><b><size=175%>x2</size></b></color>", "🚫" };
 
 
     public RawImage dzLine;
@@ -79,7 +79,7 @@ public class GlobalLeaderboardStrap : MonoBehaviour
 
         if(pl.isEliminated)
         {
-            ordinalNumberMesh.text = "💀";
+            ordinalNumberMesh.text = "<size=75%>💀";
             SetStrapColor(StrapColor.InBoneyard);
             SetButtonDisplay(ButtonDisplay.Unavailable);
         }

@@ -16,6 +16,8 @@ public static class QuestionManager
         tiebreakerQuestions = JsonConvert.DeserializeObject<List<Question>>(Operator.Get.tiebreakerQuestions.text);
         nextTiebreakerQuestion = PlayerPrefs.GetInt("tb");
 
+        DebugLog.Print($"The next tiebreaker question will be #{nextTiebreakerQuestion}/{tiebreakerQuestions.Count}", DebugLog.StyleOption.Bold, DebugLog.ColorOption.Green);
+
         if (oldFormat)
             ConvertFromOld(tx);
         else
@@ -122,5 +124,6 @@ public static class QuestionManager
             r.questions.Add(qu);
         }
         currentPack.rounds.Add(r);
+        Operator.Get.convertedOldPack = JsonConvert.SerializeObject(currentPack);
     }
 }

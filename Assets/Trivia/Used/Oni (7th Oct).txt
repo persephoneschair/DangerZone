@@ -1,0 +1,557 @@
+{
+  "author": "oni91_573",
+  "preserveRoundOrder": true,
+  "preserveQuestionOrder": true,
+  "rounds": [
+    {
+      "category": "All You Have To Do Is Follow The Rules",
+      "questions": [
+        {
+          "questionText": "Rule No.1: You MUST NOT pick a year where the tallest building in the world could be found in the USA.",
+          "answers": [
+            {
+              "answerText": "1999",
+              "isCorrect": true
+            },
+            {
+              "answerText": "1939",
+              "isCorrect": false
+            },
+            {
+              "answerText": "1959",
+              "isCorrect": false
+            },
+            {
+              "answerText": "1979",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Rule No.2: You MUST pick a correct fact about the London Underground map.",
+          "answers": [
+            {
+              "answerText": "The Jubilee line is coloured gray",
+              "isCorrect": true
+            },
+            {
+              "answerText": "The Metropolitan line is coloured black",
+              "isCorrect": false
+            },
+            {
+              "answerText": "The Central line is coloured green",
+              "isCorrect": false
+            },
+            {
+              "answerText": "The Victoria line is coloured orange",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Rule No.3: You MUST pick a country where you can buy a Big Mac from McDonald's in 2023.",
+          "answers": [
+            {
+              "answerText": "Indonesia",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Iceland",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Iran",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Ivory Coast",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Rule No.4: You MUST NOT pick a Republican US president.",
+          "answers": [
+            {
+              "answerText": "Woodrow Wilson",
+              "isCorrect": true
+            },
+            {
+              "answerText": "William Howard Taft",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Rutherford B. Hayes",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Warren G. Harding",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Rule No.5: You MUST NOT pick a hip-hop artist inducted into the Rock & Roll Hall Of Fame.",
+          "answers": [
+            {
+              "answerText": "Afrika Bambaataa",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Run-DMC",
+              "isCorrect": false
+            },
+            {
+              "answerText": "LL Cool J",
+              "isCorrect": false
+            },
+            {
+              "answerText": "The Beastie Boys",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "An Unexpected Korea Change",
+      "questions": [
+        {
+          "questionText": "The highest value banknote in South Korea is the 50,000 won note. How much is it worth in sterling?",
+          "answers": [
+            {
+              "answerText": "About £30",
+              "isCorrect": true
+            },
+            {
+              "answerText": "About £50",
+              "isCorrect": false
+            },
+            {
+              "answerText": "About £70",
+              "isCorrect": false
+            },
+            {
+              "answerText": "About £90",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Which of these corporations was founded in South Korea?",
+          "answers": [
+            {
+              "answerText": "LG",
+              "isCorrect": true
+            },
+            {
+              "answerText": "GE",
+              "isCorrect": false
+            },
+            {
+              "answerText": "HP",
+              "isCorrect": false
+            },
+            {
+              "answerText": "EE",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Which of these is NOT a film directed by Oscar winner Bong Joon-Ho?",
+          "answers": [
+            {
+              "answerText": "Oldboy",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Parasite",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Snowpiercer",
+              "isCorrect": false
+            },
+            {
+              "answerText": "The Host",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Which of these are you most likely to find on a Korean barbecue?",
+          "answers": [
+            {
+              "answerText": "Dwaeji bulgogi",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Dolsot bibimbap",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Budae-jjigae",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Ttongppang",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "What surprising feature can you find in the Demilitarized Zone between North and South Korea?",
+          "answers": [
+            {
+              "answerText": "Golf course",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Bowling alley",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Cinema",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Paintball arena",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "A Bottom-Tier Category",
+      "questions": [
+        {
+          "questionText": "What is the nationality of Arsenal manager, Mikel Arteta?",
+          "answers": [
+            {
+              "answerText": "Spanish",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Portuguese",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Brazilian",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Argentine",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Which car manufacturer produced the Pinto, a car that notoriously could be set on fire easily in a rear-end collision?",
+          "answers": [
+            {
+              "answerText": "Ford",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Dodge",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Buick",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Chevrolet",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Where exactly on the pig is the pork butt?",
+          "answers": [
+            {
+              "answerText": "Shoulder",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Leg",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Loin",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Back",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "The 90s TV series 'Noel's House Party' was set in which fictional English village?",
+          "answers": [
+            {
+              "answerText": "Crinkley Bottom",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Chunkey Bottom",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Crispey Bottom",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Crikey Bottom",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Which of these parliamentary lower houses has the highest number of seats?",
+          "answers": [
+            {
+              "answerText": "Bundestag (Germany)",
+              "isCorrect": true
+            },
+            {
+              "answerText": "House of Commons (UK)",
+              "isCorrect": false
+            },
+            {
+              "answerText": "National Assembly (France)",
+              "isCorrect": false
+            },
+            {
+              "answerText": "House of Representatives (Japan)",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "The (Not So) Big (nor) Fat Quiz of the (Last) Year",
+      "questions": [
+        {
+          "questionText": "On October 28, 2022, Elon Musk bought Twitter. How much did the idiot pay for it?",
+          "answers": [
+            {
+              "answerText": "$44 billion",
+              "isCorrect": true
+            },
+            {
+              "answerText": "$4 billion",
+              "isCorrect": false
+            },
+            {
+              "answerText": "$14 billion",
+              "isCorrect": false
+            },
+            {
+              "answerText": "$440 million",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "'Stray', winner of Best Independent Game at the 2022 Game Awards, has the player control what animal?",
+          "answers": [
+            {
+              "answerText": "Cat",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Dog",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Wolf",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Fox",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Who was the highest-paid sportswoman in 2022?",
+          "answers": [
+            {
+              "answerText": "Naomi Osaka",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Serena Williams",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Simone Biles",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Megan Rapinoe",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "The children's TV series 'Arthur' ended in 2022; in which year did it debut on screen?",
+          "answers": [
+            {
+              "answerText": "1996",
+              "isCorrect": true
+            },
+            {
+              "answerText": "1990",
+              "isCorrect": false
+            },
+            {
+              "answerText": "1993",
+              "isCorrect": false
+            },
+            {
+              "answerText": "1999",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "In which country upon her inauguration in 2022 did Xiomara Castro, the President, elect to change the colour of the stripes and stars of its flag from dark blue to turquoise?",
+          "answers": [
+            {
+              "answerText": "Honduras",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Guatemala",
+              "isCorrect": false
+            },
+            {
+              "answerText": "El Salvador",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Nicaragua",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "questions": [
+        {
+          "questionText": "Released in 2015, 'Go Set a Watchman' is a first-draft of which Pulitzer Prize winning novel?",
+          "answers": [
+            {
+              "answerText": "To Kill a Mockingbird",
+              "isCorrect": true
+            },
+            {
+              "answerText": "The Night Watchman",
+              "isCorrect": false
+            },
+            {
+              "answerText": "The Old Man and the Sea",
+              "isCorrect": false
+            },
+            {
+              "answerText": "The Grapes of Wrath",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "In which book of the Bible does Samson get his hair cut, robbing him of his superhuman strength?",
+          "answers": [
+            {
+              "answerText": "Judges",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Joshua",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Jeremiah",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Jonah",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Which of these measurements is the largest?",
+          "answers": [
+            {
+              "answerText": "Quettagram",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Ronnagram",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Quectogram",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Rontogram",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "In Australian rules football, what is the name of the sleeveless shirt the players wear?",
+          "answers": [
+            {
+              "answerText": "Guernsey",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Jersey",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Alderney",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Sark",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "I'm signalling to you a letter D (for Dangerzone) in semaphore. In which position are my flags from your perspective?",
+          "answers": [
+            {
+              "answerText": "Left flag due north, right flag due south",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Left flag due south, right flag due north",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Both flags due north",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Both flags due south",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

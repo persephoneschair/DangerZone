@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityStandardAssets.Effects;
 
 public class CreditsManager : SingletonMonoBehaviour<CreditsManager>
 {
@@ -29,6 +28,7 @@ public class CreditsManager : SingletonMonoBehaviour<CreditsManager>
     public void RollCredits()
     {
         this.gameObject.SetActive(true);
+        LeaderboardManager.Get.gameObject.SetActive(false);
         StartCoroutine(CreditsSequence());
     }
 

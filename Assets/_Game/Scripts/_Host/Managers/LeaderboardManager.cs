@@ -32,7 +32,7 @@ public class LeaderboardManager : SingletonMonoBehaviour<LeaderboardManager>
         straps.FirstOrDefault(x => x.containedPlayer == null).PopulateStrap(po, false);
         cloneStraps.FirstOrDefault(x => x.containedPlayer == null).PopulateStrap(po, true);
         ReorderBoard();
-        if (LobbyManager.Get.lateEntry && GameplayManager.Get.roundsPlayed == 0)
+        if (LobbyManager.Get.lateEntry/* && GameplayManager.Get.roundsPlayed == 0*/)
             SetStartRoundDangerZone();
     }
 
@@ -46,8 +46,8 @@ public class LeaderboardManager : SingletonMonoBehaviour<LeaderboardManager>
         {
             straps[i].MoveStrap(originalStraps[i].startPos, i);
             cloneStraps[i].MoveStrap(originalStraps[i].startPos, i);
-            straps[i].ordinalNumberMesh.text = Extensions.AddOrdinal(i + 1);
-            cloneStraps[i].ordinalNumberMesh.text = Extensions.AddOrdinal(i + 1);
+            straps[i].ordinalNumberMesh.text = (i + 1).ToString()/*Extensions.AddOrdinal(i + 1)*/;
+            cloneStraps[i].ordinalNumberMesh.text = (i + 1).ToString()/*Extensions.AddOrdinal(i + 1)*/;
         }
     }
 
@@ -89,7 +89,7 @@ public class LeaderboardManager : SingletonMonoBehaviour<LeaderboardManager>
             for (int i = 0; i < PlayerManager.Get.players.Count; i++)
             {
                 //"In the DangerZone"
-                if (i >= PlayerManager.Get.players.Count(x => !x.isEliminated) - dzCount)
+                if (i >= PlayerManager.Get.players.Count(x => !x.isEliminated) - dzCount /*|| (straps[i].containedPlayer != null && straps[i].containedPlayer.isInDangerZone)*/)
                 {
                     //repaint but DON'T SET AS IN DZ - this comes post-Q
                     straps[i].SetStrapColor(GlobalLeaderboardStrap.StrapColor.Incorrect);
@@ -102,6 +102,25 @@ public class LeaderboardManager : SingletonMonoBehaviour<LeaderboardManager>
                     straps[i].SetStrapColor(GlobalLeaderboardStrap.StrapColor.Correct);
                     cloneStraps[i].SetStrapColor(GlobalLeaderboardStrap.StrapColor.Correct);
                 }
+            }
+
+            //If we are in late entry mode and the number of players in the DZ is greater than the expected value
+            if(LobbyManager.Get.lateEntry && PlayerManager.Get.players.Count(x => x.isInDangerZone) > DangerZoneManager.Get.GetRoundStartDZSize())
+            {
+                foreach(PlayerObject pl in PlayerManager.Get.players.Where(x => !x.isEliminated).ToList())
+                {
+                    //Kill all DZ lines of non-eliminated players
+                    pl.strap.ToggleDZLine(false);
+                    pl.cloneStrap.ToggleDZLine(false);
+                    //Color tied in DZ players orange
+                    if(pl.isInDangerZone || pl.points == 0)
+                    {
+                        pl.strap.SetStrapColor(GlobalLeaderboardStrap.StrapColor.TiedInDZ);
+                        pl.cloneStrap.SetStrapColor(GlobalLeaderboardStrap.StrapColor.TiedInDZ);
+                    }
+                }
+                PlayerManager.Get.players.OrderByDescending(x => x.points).ThenBy(x => x.playerName).FirstOrDefault(x => x.isInDangerZone).strap.ToggleDZLine(true);
+                PlayerManager.Get.players.OrderByDescending(x => x.points).ThenBy(x => x.playerName).FirstOrDefault(x => x.isInDangerZone).cloneStrap.ToggleDZLine(true);
             }
         }
 
@@ -214,13 +233,13 @@ public class LeaderboardManager : SingletonMonoBehaviour<LeaderboardManager>
                 //Set emoji for joint top
                 if(orderedPlayers.FirstOrDefault(x => x.isEliminated).totalCorrect == po.totalCorrect)
                 {
-                    po.strap.ordinalNumberMesh.text = "👑";
-                    po.cloneStrap.ordinalNumberMesh.text = "👑";
+                    po.strap.ordinalNumberMesh.text = "<size=75%>👑";
+                    po.cloneStrap.ordinalNumberMesh.text = "<size=75%>👑";
                 }
                 else
                 {
-                    po.strap.ordinalNumberMesh.text = "💀";
-                    po.cloneStrap.ordinalNumberMesh.text = "💀";
+                    po.strap.ordinalNumberMesh.text = "<size=75%>💀";
+                    po.cloneStrap.ordinalNumberMesh.text = "<size=75%>💀";
                 }
 
                 //Set colors and clear variables

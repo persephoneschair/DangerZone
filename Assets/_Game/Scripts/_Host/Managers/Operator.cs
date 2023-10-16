@@ -16,6 +16,8 @@ public class Operator : SingletonMonoBehaviour<Operator>
     public bool fastValidation;
     [Tooltip("Start the game in recovery mode to restore any saved data from a previous game crash")]
     public bool recoveryMode;
+    [Tooltip("Does not show total Qs per round")]
+    public bool hideRoundCount;
     [Tooltip("Limits the number of accounts that may connect to the room (set to 0 for infinite)")]
     [Range(0, 100)] public int playerLimit;
 
